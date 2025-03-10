@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoorTimes</title>
+    <meta name="description" content="NoorTimes Website, dedicated to providing resources and schedules for Ramadan activities." />
+    <meta name="author" content="Imran Shiundu" />
+    <meta name="keywords" content="NoorTimes, fasting, schedule, prayer, Quran, Muslim activities" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="NoorTimes" />
+    <meta property="og:description" content="Explore activities, prayer schedules, and tips for Ramadhan 1445H. A special guide for Muslims during the holy month of Ramadan." />
+    <meta property="og:image" content="https://noortimes.netlify.app/preview.png" />
+    <meta property="og:url" content="https://noortimes.netlify.app/preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Sawarabi+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://nousantx.github.io/tenoxui-pages/css/google-icons.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="other.css">
+    <script src="https://cdn.jsdelivr.net/npm/tenoxui@0.5.1"></script>
+  </head>
+  <body class="bg-primary-900 text-accent-300">
+
+    <nav class="navbar">
+      <header onclick="location.reload()" class="cursor-pointer">
+        <h1 class="fs-1em text-accent-300">NoorTimes</h1>
+      </header>
+        
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#activities" class="nav-link">Activities</a></li>
+          <li><a href="#schedule" class="nav-link">Schedule</a></li>
+        </ul>
+    </nav>
+    
+    <div id="scroll-indicator" class="scroll-indicator">
+      <span>Scroll Down</span>
+    </div>
+    
+    
+
+    <!--MAIN PART-->
+
+    <main>
+
+     <!--HEADER START-->
+      <section id="home" class="w-100% h-100vh center fd-column">
+        <header class="position-relative ta-center">
+          <p class="fs-12px">Say hello to</p>
+          <h1 class="fs-4em text-accent-500 mt--1rem mb--2rem amiri" style="">
+            Ramadhan
+          </h1>
+          <br>
+          <span class="ta-center fs-14px w-100% d-block amiri">- ١٤٤٥ -</span>
+          <br>
+          <span
+            class="float-icon text-accent-500 ms-round t-1rem l--1rem fs-2em opa-0.3 rt-20deg"
+            >nightlight</span
+          >
+          <br>
+          <span
+            class="float-icon text-accent-500 ms-round r--1rem b-1rem fs-2.4em rt-20deg opa-0.3"
+            >brightness_2</span
+          >
+        </header>
+        <p class="ta-center w-mx-600px fs-18px amiri mt-2rem text-accent-200">
+          <i class="amiri">"A Gift For You From Me "</i>
+          <br>
+          <i class="amiri">"Let's fast, when else can we harvest rewards?"</i>
+        </p>
+        <div
+          class="position-fixed b-0 r-0 p-1rem bg-primary-800 radius-tl-1rem center gap-6px"
+        >
+          <span class="ms-line fs-14px">calendar_month</span>
+          <span id="date" class="fs-12px fw-500"></span>
+        </div>
+      </section>
+
+      <!--HEADER END-->
+      
+
+
+      <div
+        class="bg-primary-800 ph-10vw pv-2rem center w-full ta-center radius-top-1rem"
+      >
+        <p class="fs-14px w-mx-600px">
+          <i class="amiri">
+            "Fasting is not just about abstaining from food and drink. It's also an activity that enhances patience, piety, and awareness of the suffering of others."
+          </i>
+        </p>
+      </div>
+
+<!--Activities Start-->
+<section id="activities" class="center bg-accent-200 text-primary-800 fd-column">
+  <header class="ta-center">
+    <h1 class="amiri fs-2em">Activities</h1>
+    <p class="mt--1rem fs-14px text-primary-700">
+      Activities to do during the holy month of fasting
+    </p>
+  </header>
+  <div class="w-full center gap-1rem fx-wrap-wrap ai-stretch mt-2rem text-accent-300">
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">restaurant</span>
+      <h2 class="fs-1.3rem mt-8px">Sahur & Iftar</h2>
+    </div>
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">menu_book</span>
+      <h2 class="fs-1.3rem mt-8px">Reading the Qur'an</h2>
+    </div>
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">mosque</span>
+      <h2 class="fs-1.3rem mt-8px">Taraweeh Prayer</h2>
+    </div>
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">more_vert</span>
+      <h2 class="fs-1.3rem mt-8px">Dhikr & Swalat</h2>
+    </div>
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">hotel</span>
+      <h2 class="fs-1.3rem mt-8px">Getting Sufficient Rest</h2>
+    </div>
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">sentiment_dissatisfied</span>
+      <h2 class="fs-1.3rem mt-8px">Controlling Anger</h2>
+    </div>
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">voice_selection</span>
+      <h2 class="fs-1.3rem mt-8px">Guarding the Tongue</h2>
+    </div>
+    <div class="activity-item">
+      <span class="ms-round fs-3rem">directions_run</span>
+      <h2 class="fs-1.3rem mt-8px">Light Exercise</h2>
+    </div>
+  </div>
+  <p class="mt-2rem fs-14px text-primary-700">
+    Fasting and dating? What a waste!
+  </p>
+</section>
+<!--Activities End -->
+
+
+      <div
+        class="bg-primary-800 ph-10vw pv-2rem center w-full ta-center radius-bottom-1rem"
+      >
+        <p class="fs-14px w-mx-600px">
+          <i class="amiri">
+            "The second pillar of Islam is the one most frequently neglected by Muslims."
+          </i>
+        </p>
+      </div>
+
+      <!--Schedule Start-->
+<section id="schedule" class="fd-column center">
+  <header class="ta-center">
+    <h1 class="amiri fs-2em">Schedule</h1>
+    <p class="mt--1rem fs-14px">Let's make your activities more efficient during this blessed month.</p>
+  </header>
+
+  <div class="w-full w-mx-700px mt-2rem center fx-wrap-wrap gap-2rem">
+    <!-- Sahur, Imsak, and prayers -->
+    <div class="fx-300px center ai-start fd-column gap-2rem">
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">restaurant</span>
+        </div>
+        <header>
+          <h2>Sahur</h2>
+          <p>04:00</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">restaurant_menu</span>
+        </div>
+        <header>
+          <h2>Imsak</h2>
+          <p>04:15</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">mosque</span>
+        </div>
+        <header>
+          <h2>Swalat Fajr</h2>
+          <p>04:30</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">menu_book</span>
+        </div>
+        <header>
+          <h2>Reading the Qur'an</h2>
+          <p>04:45</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">hotel</span>
+        </div>
+        <header>
+          <h2>Sleep (Not Recommended)</h2>
+          <p>05:30</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">directions_run</span>
+        </div>
+        <header>
+          <h2>Start Activities</h2>
+          <p>06:30</p>
+        </header>
+      </div>
+    </div>
+
+    <!-- Duhur, Asr, Maghrib, Isha prayers -->
+    <div class="fx-300px center ai-start fd-column gap-2rem">
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">mosque</span>
+        </div>
+        <header>
+          <h2>Swalat Dhuhr</h2>
+          <p>13:00</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">hotel</span>
+        </div>
+        <header>
+          <h2>Nap</h2>
+          <p>14:00</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">mosque</span>
+        </div>
+        <header>
+          <h2>Swalat Asr</h2>
+          <p>15:45</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">menu_book</span>
+        </div>
+        <header>
+          <h2>Reading the Qur'an</h2>
+          <p>16:00</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">restaurant</span>
+        </div>
+        <header>
+          <h2>Swalat Maghrib & Iftar</h2>
+          <p>18:45</p>
+        </header>
+      </div>
+      <div class="schedule-wrapper">
+        <div class="bubble-wrapper">
+          <span class="mi-round bubble-icon text-primary-800">mosque</span>
+        </div>
+        <header>
+          <h2>Swalat Isha & Taraweeh</h2>
+          <p>20:15</p>
+        </header>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Schedule End -->
+
+    </main>
+
+    <!--Main Start-->
+
+    <!--Footer Start-->
+    <footer class="center fd-column bg-primary-800 radius-top-1rem">
+      <header class="ta-center">
+        <h1>NoorTimes</h1>
+        <p class="w-mx-600px">
+          <i class="amiri">
+            May we meet again next Ramadhan. Wishing you a blessed and fruitful fasting experience.
+          </i>
+        </p>
+      </header>
+      <p class="fs-12px mt-2rem w-full ta-left pb-1rem">
+        &copy; 2025 Imran Shiundu. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!--Footer End -->
+    
+    <script src="script.js"></script>
+  </body>
+</html>

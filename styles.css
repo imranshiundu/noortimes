@@ -1,0 +1,536 @@
+:root {
+    /* Primary: Rich Brown, Earthy Tones */
+    --primary-100: #f1e6d7; /* Light beige */
+    --primary-200: #decdb2; /* Warm sand */
+    --primary-300: #c9b18a; /* Light brown */
+    --primary-400: #a47c55; /* Deep brownish gold */
+    --primary-500: #7a5b34; /* Classic brown */
+    --primary-600: #5b4423; /* Darker brown */
+    --primary-700: #3e2d16; /* Very dark brown */
+    --primary-800: #2d1a0d; /* Dark chocolate */
+    --primary-900: #1b0d05; /* Deep earthy brown */
+  
+    /* Accent: Orange & Aqua for Ramadan Vibe */
+    --accent-100: #fff4e5; /* Soft warm orange */
+    --accent-200: #ffd8a8; /* Light orange */
+    --accent-300: #ffb84d; /* Orange gold */
+    --accent-400: #ff9f0d; /* Bright amber */
+    --accent-500: #e6880b; /* Rich gold */
+    --accent-600: #c7780a; /* Deep amber */
+    --accent-700: #a56708; /* Dark amber */
+    --accent-800: #8a5507; /* Burnt orange */
+    --accent-900: #5f3f05; /* Very dark amber */
+  
+    --aqua-100: #e3f5f0; /* Soft Aqua */
+    --aqua-200: #b6e4df; /* Light Aqua */
+    --aqua-300: #7fd2ca; /* Calm Aqua */
+    --aqua-400: #4fada4; /* Deep Aqua */
+    --aqua-500: #3b8e7d; /* Dark Aqua */
+  
+    /* Neutral Tones */
+    --neutral-100: #fafbfa; /* Light neutral */
+    --neutral-200: #e1e4e0; /* Light grey */
+    --neutral-300: #c1c6c1; /* Greyish tone */
+    --neutral-400: #a3a8a3; /* Medium grey */
+    --neutral-500: #828b82; /* Grey */
+    --neutral-600: #5f625f; /* Darker grey */
+    --neutral-700: #3d433d; /* Very dark grey */
+    --neutral-800: #212421; /* Charcoal */
+    --neutral-900: #111211; /* Almost black */
+  
+    /* Spacing and Flexbox */
+    --space-between: space-between;
+    --flex-start: flex-start;
+    --flex-end: flex-end;
+  }
+  
+  * {
+    font-family: "Sawarabi Gothic", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+
+  /* Global Styles */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Anchor Links */
+  a {
+    color: var(--accent-300);
+    text-decoration-color: var(--primary-400);
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--accent-500);
+  }
+  
+  /* Paragraph */
+  p {
+    color: var(--accent-300);
+  }
+  
+  /* Main Section */
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  /* Section */
+  section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 4rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  
+  /* Footer */
+  footer {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 14px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 1rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    z-index: 1000;
+    background-color: var(--primary-800);
+  }
+
+  /* Background Color Class */
+.bg-primary-800 {
+    background-color: #5f3f05; /* Example of primary color */
+  }
+  
+  /* Padding Horizontal (ph) - 10vw */
+  .ph-10vw {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  
+  /* Padding Vertical (pv) - 2rem */
+  .pv-2rem {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Centering Text Horizontally */
+  .center {
+    text-align: center;
+  }
+  
+  /* Full Width */
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Text Alignment Center */
+  .ta-center {
+    text-align: center;
+  }
+  
+  /* Border Radius at the Bottom */
+  .radius-bottom-1rem {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  /* Font Size 14px */
+  .fs-14px {
+    font-size: 14px;
+  }
+  
+  /* Max Width 600px and Margin Auto (w-mx-600px) */
+  .w-mx-600px {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Amiri Font for <i> tag */
+  .amiri {
+    font-family: "Amiri", serif; /* Ensure the Amiri font is applied */
+    font-style: italic;
+  }
+  
+  
+  /* Center Align */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Flex Start Align */
+  .flex-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Start Align */
+  .start {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /* End Align */
+  .end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Full Width */
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Relative Positioning */
+  .relative {
+    position: relative;
+  }
+  
+  /* Absolute & Float Icon */
+  .absolute,
+  .float-icon {
+    position: absolute;
+  }
+  
+  .float-icon {
+    animation: float 6s infinite;
+  }
+  
+  /* Keyframes for Floating Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+ /* Global styles for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Menu Container (Hamburger and Nav Links) */
+  .menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    color: var(--accent-300);
+    text-decoration-color: var(--primary-400);
+    font-size: 1rem;
+  }
+  
+  .nav-link:hover {
+    color: var(--accent-500);
+  }
+  
+  
+  .nav-links.active {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+ 
+  /* Sticky Navbar */
+.sticky {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* HEAD START */
+  #home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('ramadhanbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #home header h1 {
+    color: var(--accent-500);
+    margin-top: -0.5rem;
+    margin-bottom: -1rem;
+    animation: slideInDown 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #home .text-accent-200 {
+    color: var(--accent-200);
+  }
+  
+  #home .float-icon {
+    font-size: 2em;
+    gap: 2px;
+    color: var(--accent-500);
+    position: absolute;
+    opacity: 0.3;
+    animation: float 6s infinite ease-in-out;
+  }
+  
+  #home .float-icon:first-child {
+    top: 1rem;
+    left: -0.5rem;
+  }
+  
+  #home .float-icon:last-child {
+    right: 3rem;
+    bottom: 12rem;
+  }
+  
+  #home p {
+    text-align: center;
+    width: 60%;
+    font-size: 18px;
+    margin-top: 2rem;
+    color: var(--neutral-100);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  #home .position-fixed {
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--primary-800);
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    gap: 6px;
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  /* HEAD END */
+
+  
+  /* ACTIVITIES START */
+#activities {
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(rgba(230, 135, 11, 0.329), rgba(230, 135, 11, 0.336)),
+      url('2.png'); /* Add your image path */
+      background-size: cover;
+    color: var(--primary-800);
+    
+  }
+  
+  /* Background Image Animation */
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #activities::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+    z-index: 1;
+  }
+  
+  #activities * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #activities header h1 {
+    font-size: 2.5rem;
+    font-family: 'Amiri', serif;
+    margin-bottom: 1rem;
+    color: var(--primary-800);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #activities header p {
+    font-size: 0.9rem;
+    color: var(--primary-700);
+    margin-top: -1rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  #activities .activity-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  #activities .activity-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #activities .activity-item span {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-800);
+  }
+  
+  #activities .activity-item h2 {
+    font-size: 1rem;
+    color: var(--primary-700);
+    margin-top: 0.5rem;
+  }
+  
+  #activities .w-full {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  #activities p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: var(--primary-700);
+    animation: fadeInUp 0.6s ease-in-out;
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  footer{
+    background-color: var(--primary-800);
+  }
+
+  /* Responsive Adjustments */
+  @media only screen and (max-width: 600px) {
+    #activities header h1 {
+      font-size: 2rem;
+    }
+  
+    #activities .activity-item {
+      width: 120px;
+      padding: 0.75rem;
+    }
+  
+    #activities .activity-item span {
+      font-size: 2.5rem;
+    }
+  
+    #activities .activity-item h2 {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #home header h1 {
+      font-size: 3em;
+    }
+  
+    #home p {
+      width: 80%;
+    }
+  
+    #activities .activity-item {
+      width: 120px;
+    }
+  
+    .schedule-wrapper {
+      max-width: 280px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #home header h1 {
+      font-size: 2.5em;
+    }
+  
+    #home p {
+      width: 90%;
+      font-size: 16px;
+    }
+  
+    #activities .activity-item {
+      width: 100%;
+    }
+  
+    .schedule-wrapper {
+      max-width: 100%;
+    }
+  }
+
+  

@@ -1,0 +1,278 @@
+:root {
+    /* Primary: Rich Brown, Earthy Tones */
+    --primary-100: #f1e6d7; /* Light beige */
+    --primary-200: #decdb2; /* Warm sand */
+    --primary-300: #c9b18a; /* Light brown */
+    --primary-400: #a47c55; /* Deep brownish gold */
+    --primary-500: #7a5b34; /* Classic brown */
+    --primary-600: #5b4423; /* Darker brown */
+    --primary-700: #3e2d16; /* Very dark brown */
+    --primary-800: #2d1a0d; /* Dark chocolate */
+    --primary-900: #1b0d05; /* Deep earthy brown */
+  
+    /* Accent: Orange & Aqua for Ramadan Vibe */
+    --accent-100: #fff4e5; /* Soft warm orange */
+    --accent-200: #ffd8a8; /* Light orange */
+    --accent-300: #ffb84d; /* Orange gold */
+    --accent-400: #ff9f0d; /* Bright amber */
+    --accent-500: #e6880b; /* Rich gold */
+    --accent-600: #c7780a; /* Deep amber */
+    --accent-700: #a56708; /* Dark amber */
+    --accent-800: #8a5507; /* Burnt orange */
+    --accent-900: #5f3f05; /* Very dark amber */
+  
+    --aqua-100: #e3f5f0; /* Soft Aqua */
+    --aqua-200: #b6e4df; /* Light Aqua */
+    --aqua-300: #7fd2ca; /* Calm Aqua */
+    --aqua-400: #4fada4; /* Deep Aqua */
+    --aqua-500: #3b8e7d; /* Dark Aqua */
+  
+    /* Neutral Tones */
+    --neutral-100: #fafbfa; /* Light neutral */
+    --neutral-200: #e1e4e0; /* Light grey */
+    --neutral-300: #c1c6c1; /* Greyish tone */
+    --neutral-400: #a3a8a3; /* Medium grey */
+    --neutral-500: #828b82; /* Grey */
+    --neutral-600: #5f625f; /* Darker grey */
+    --neutral-700: #3d433d; /* Very dark grey */
+    --neutral-800: #212421; /* Charcoal */
+    --neutral-900: #111211; /* Almost black */
+  
+    /* Spacing and Flexbox */
+    --space-between: space-between;
+    --flex-start: flex-start;
+    --flex-end: flex-end;
+  }
+  
+  /* SCHEDULE START */
+  #schedule {
+    background-image: url(3.png);
+    background-size: cover;
+    padding: 0;
+    color: var(--primary-800);
+  }
+  
+  #schedule header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  #schedule h1 {
+    padding: 10px;
+    font-size: 2.8rem;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #schedule p {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-700);
+    margin-top: 0.5rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .schedule-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-100);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .schedule-wrapper:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bubble-icon {
+    font-size: 4rem;
+    color: var(--accent-500);
+    background-color: var(--accent-100);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .bubble-wrapper:hover .bubble-icon {
+    animation: iconPop 0.5s ease-in-out;
+  }
+  
+  /* SCHEDULE END */
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes iconPop {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+ 
+ /* Media Queries for Responsiveness */
+  
+  /* Small devices (phones, 600px and below) */
+  @media only screen and (max-width: 600px) {
+    #schedule header h1 {
+      font-size: 1.5em;
+    }
+  
+    .schedule-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  
+    .bubble-wrapper {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .bubble-icon {
+      font-size: 20px;
+    }
+  
+    .schedule-wrapper header h2 {
+      font-size: 1em;
+    }
+  
+    .schedule-wrapper header p {
+      font-size: 12px;
+    }
+  }
+  
+  /* Medium devices (tablets, 601px to 900px) */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    #schedule header h1 {
+      font-size: 1.75em;
+    }
+  
+    .schedule-wrapper {
+      gap: 0.75rem;
+    }
+  
+    .bubble-wrapper {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .bubble-icon {
+      font-size: 22px;
+    }
+  
+    .schedule-wrapper header h2 {
+      font-size: 1.1em;
+    }
+  
+    .schedule-wrapper header p {
+      font-size: 13px;
+    }
+  }
+  
+  /* Large devices (desktops, 901px and up) */
+  @media only screen and (min-width: 901px) {
+    #schedule {
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+      left: 300px;
+      margin: 0 auto;
+    }
+  
+    .schedule-wrapper {
+      gap: 1rem;
+    }
+  
+    .bubble-wrapper {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .bubble-icon {
+      font-size: 24px;
+    }
+  
+    .schedule-wrapper header h2 {
+      font-size: 1.2em;
+    }
+  
+    .schedule-wrapper header p {
+      font-size: 14px;
+    }
+  }
+
+
+  /* Scroll Indicator Styles */
+.scroll-indicator {
+    position: fixed;
+    top: 9px;
+    right: 20px;
+    color: #e6880b;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+    z-index: 1000;
+    font-weight: italic;
+  }
+  
+  .scroll-indicator span {
+    animation: bounce 1s infinite;
+  }
+  
+  /* Bounce Animation for the Scroll Indicator */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* When Scrolling, Hide the Scroll Indicator */
+  .scroll-indicator.hidden {
+    opacity: 0;
+  }
+  
+  
